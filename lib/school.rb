@@ -3,6 +3,7 @@ class School
   
   def initialize (school_name)
     @school_name = school_name
+<<<<<<< HEAD
     @roster = {}
   end
   
@@ -29,5 +30,20 @@ class School
     self.roster[grade] = students.sort
     }
     end
+=======
+  end
+  
+  def roster 
+    @roster = {}
+  end
+  
+  def add_student(student_name, student_grade)
+    binding.pry
+    self.roster[student_grade] = []
+    self.roster[student_grade] << student_name
+  end
+    
+  
+>>>>>>> 10d89844c068326774189e6a50258a3d15274201
 end 
   
